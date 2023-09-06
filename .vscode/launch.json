@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Program",
+        "program": "${workspaceFolder}/app.js", // Change this to your entry file
+        "runtimeArgs": [], // Optional: Additional runtime arguments
+        "env": {
+          "NODE_ENV": "development" // Optional: Set environment variables
+        },
+        "cwd": "${workspaceFolder}", // Optional: Working directory
+        "console": "integratedTerminal" // Optional: Open the integrated terminal
+      }
+    ]
+  }

@@ -9,9 +9,8 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "moment": "^2.29.4",
+    "mysql2": "^3.6.0"
   },
   "description": "��#\u0000 \u0000B\u0000i\u0000t\u0000e\u0000s\u0000p\u0000e\u0000e\u0000d\u0000\r\u0000 \u0000",
   "main": "app.js",
@@ -24,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/sandeepbaraik/Bitespeed/issues"
   },
-  "homepage": "https://github.com/sandeepbaraik/Bitespeed#readme"
+  "homepage": "https://github.com/sandeepbaraik/Bitespeed#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
