@@ -5,13 +5,13 @@
         "type": "node",
         "request": "launch",
         "name": "Launch Program",
-        "program": "${workspaceFolder}/app.js", // Change this to your entry file
-        "runtimeArgs": [], // Optional: Additional runtime arguments
+        "program": "${workspaceFolder}/app.js", 
+        "runtimeArgs": [], 
         "env": {
-          "NODE_ENV": "development" // Optional: Set environment variables
+          "NODE_ENV": "development" 
         },
-        "cwd": "${workspaceFolder}", // Optional: Working directory
-        "console": "integratedTerminal" // Optional: Open the integrated terminal
+        "cwd": "${workspaceFolder}", 
+        "console": "integratedTerminal" 
       }
     ]
   }
