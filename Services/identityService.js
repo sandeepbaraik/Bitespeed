@@ -13,6 +13,7 @@ identityService.getIdentity = async function (data) {
         let filteredResponse = response.filter(item => item.email == data.email || item.phoneNumber == data.phoneNumber);
         filteredResponse.sort((a, b) => new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime());
         filteredResponse[0].linkPrecedence = 'primary';
+        filteredResponse[0].linkedId = null;
         for(let i = 1; i < filteredResponse.length; i++) {
             filteredResponse[i].linkPrecedence = 'secondary';
             filteredResponse[i].linkedId = filteredResponse[0].id;
@@ -30,7 +31,7 @@ identityService.getIdentity = async function (data) {
         // createRes = await db.query(createQuery);
     } else {
         console.log("data: ", data);
-        let createQuery = `INSERT INTO Contact (phoneNumber, email, linkPrecedence, createdAt, updatedAt) VALUES ("${data.phoneNumber}", "${data.email}", "primary",
+        let createQuery = `INSERT INTO Contact (phoneNumber, email, linkedId, linkPrecedence, createdAt, updatedAt) VALUES ("${data.phoneNumber}", "${data.email}", null "primary",
                            now(), now())`
         createRes = await db.query(createQuery);
     }
