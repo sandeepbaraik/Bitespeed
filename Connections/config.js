@@ -1,9 +1,9 @@
 const config = {
     db: {
       host: "sql12.freemysqlhosting.net",
-      user: "sql12643526",
-      password: "yQZ12t2iYu",
-      database: "sql12643526"
+      user: "sql12644981",
+      password: "plI6Xd5qJy",
+      database: "sql12644981"
     },
   };
 
